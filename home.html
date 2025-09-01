@@ -1,33 +1,45 @@
 <!DOCTYPE html>
-<html lang="pt-BR"
-
-    <head>
-        <meta charset="UTF-8"> <!-- O UTF-8 aqui serve para que o computador possa ler e exibir os acentos corretamente -->
-        <title>Ateliê Cacau - Chocolates Artesanais Personalizados</title>
-    </head>
-
-    <body>
-        <div id = "root">
-            <div>
-                <header>
-                    <div>
-                        <img src="imagens/logo-cacau.jpeg" alt="Logo Ateliê Cacau">
-                        <h1>Ateliê Cacau</h1>
-                    </div>
-                    <nav>
-                    <a href="#produtos">Produtos</a>
-                    <a href="#Personalizar">Personalizar</a>
-                    <a href="#Contatos">Contatos</a>
-                    </nav>
-                </header>
-                <section>
-                    <div>
-                        <h2>
-                            Detalhes que derretem <br> no paladar e no coração
-                        </h2>
-                        <p>Chocolates artesanais personalizados com arte, sabor e emoção.</p>
-                        <button>Comece a personalizar</button>
-                    </div>
-                </section>
-            </div>
-        </body>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- O UTF-8 aqui serve para que o computador possa ler e exibir os acentos corretamente -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Ateliê Cacau - Chocolates Artesanais Personalizados</title>
+  </head>
+  <body>
+    <div id="root">
+      <div class="min-h-screen flex flex-col header-bg header-text">
+        <header
+          class="header-bg header-text px-6 py-4 flex items-center justify-between"
+        >
+          <div class="flex items-center space-x-4">
+            <img
+              src="imagens/logo-cacau.jpeg"
+              alt="Logo Ateliê Cacau"
+              class="h-12 w-auto rounded"
+            />
+            <h1 class="text-2xl font-serif tracking-wide">Ateliê Cacau</h1>
+          </div>
+          <nav class="space-x-4 hidden md:flex">
+            <a href="#produtos" class="hover:underline">Produtos</a>
+            <a href="#Personalizar" class="hover:underline">Personalizar</a>
+            <a href="#Contatos" class="hover:underline">Contatos</a>
+          </nav>
+        </header>
+        <section>
+          <div>
+            <h2>
+              Detalhes que derretem <br />
+              no paladar e no coração
+            </h2>
+            <p>
+              Chocolates artesanais personalizados com arte, sabor e emoção.
+            </p>
+            <button>Comece a personalizar</button>
+          </div>
+        </section>
+      </div>
+    </div>
+  </body>
+</html>
