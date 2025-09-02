@@ -2,32 +2,39 @@
 <html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
-    <!-- O UTF-8 aqui serve para que o computador possa ler e exibir os acentos corretamente -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="index.css" />
     <title>Ateliê Cacau - Chocolates Artesanais Personalizados</title>
   </head>
   <body>
     <div id="root">
-      <div class="min-h-screen flex flex-col header-bg header-text">
+      <div class="text-[#0f0e0e] bg-[#fffbf9] min-h-screen flex flex-col">
         <header
-          class="header-bg header-text px-6 py-4 flex items-center justify-between"
+          class="bg-[#672d09] text-[#fffbf9] px-6 py-4 flex items-center justify-between"
         >
           <div class="flex items-center space-x-4">
             <img
               src="imagens/logo-cacau.jpeg"
               alt="Logo Ateliê Cacau"
-              class="h-12 w-auto rounded"
+              class="w-auto rounded h-12"
             />
-            <h1 class="text-2xl font-serif tracking-wide">Ateliê Cacau</h1>
+            <h1 class="font-serif text-2xl tracking-wide">Ateliê Cacau</h1>
           </div>
           <nav class="space-x-4 hidden md:flex">
+            <a href="index.html" class="hover:underline">Home</a>
+            <a href="#quem-somos" class="hover:underline">Quem Somos</a>
             <a href="#produtos" class="hover:underline">Produtos</a>
-            <a href="#Personalizar" class="hover:underline">Personalizar</a>
-            <a href="#Contatos" class="hover:underline">Contatos</a>
+            <a href="servicos.html" class="hover:underline">Serviços</a>
+            <a href="#precos" class="hover:underline">Preços</a>
+            <a href="contato.html" class="hover:underline">Contato</a>
           </nav>
         </header>
-    <section>Serviços que oferecemos</section>
+      <section id="produtos" class="py-20 bg-[#fffbf9]">
+        <div class="container mx-auto px-6">
+        <div class="text-center mb-16"><h3 class="text-4xl md:text-5xl font-bold mb-4 font-serif text-[#672d09]">Serviços que oferecemos</h3>
+          <p class="text-lg text-gray-600 max-w-2xl mx-auto">Cada chocolate é uma obra de arte, criada com ingredientes selecionados e muito carinho</p>
+        </div>
+        <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
     <div
       class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl hover:scale-105 transition-all duration-300">
       <img
@@ -35,19 +42,14 @@
         alt="comemorativo"
         class="w-full h-48 object-cover"/>
       <div class="p-6">
-        <h4 class="text-xl font-bold mb-3 font-serif text-[#672d09]">
-          Coleções Temáticas
-        </h4>
+        <h4 class="text-xl font-bold mb-3 font-serif text-[#672d09]">Coleções Temáticas</h4>
         <p class="text-gray-600 leading-relaxed">
           Para datas especiais e campanhas criativas. Cada coleção conta uma
           história única através do sabor.
         </p>
+        </div>
       </div>
-    </div>
-
-    <div
-      class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl hover:scale-105 transition-all duration-300"
-    >
+    <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl hover:scale-105 transition-all duration-300">
       <img
         src="imagens/personalizado.png"
         alt="comemorativo"
@@ -61,8 +63,8 @@
           Chocolates personalizados para empresas, eventos corporativos e
           brindes exclusivos que deixam uma impressão duradoura.
         </p>
+        </div>
       </div>
-    </div>
     <div
       class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl hover:scale-105 transition-all duration-300"
     >
@@ -79,7 +81,24 @@
           Receba uma seleção exclusiva de chocolates artesanais personalizados
           diretamente na sua porta todo mês.
         </p>
+        </div>
       </div>
     </div>
+    </div>
+  </section>
+        <footer class="bg-[#672d09] text-white py-8">
+          <div class="text-center container mx-auto px-6">
+            <div class="mb-4">
+              <h2 class="text-2xl font-bold font-serif mb-2">Ateliê Cacau</h2>
+              <p class="text-sm opacity-80">
+                Chocolates artesanais que tocam o coracao
+              </p>
+            </div>
+            <p class="text-sm opacity-70">
+              © 2025 Ateliê Cacau. Todos os direitos reservados.
+            </p>
+          </div>
+        </footer>
+      </div>
   </body>
 </html>
