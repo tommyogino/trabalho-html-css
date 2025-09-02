@@ -113,7 +113,9 @@ pre {
   font-variation-settings: normal;
   font-size: 1em;
 }
-
+.img-rec{
+  object-fit: cover;
+}
 small {
   font-size: 80%;
 }
@@ -345,6 +347,31 @@ html {
   z-index: 10;
 }
 
+.cards{
+  width: 140px;
+  height: auto;
+  background-color: #ffe9b9;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.cards h1 {
+  text-align: center;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: large;
+  padding: 0.5rem;
+}
+.cards p {
+  text-align: center;
+  padding: 1.5rem;
+}
+
+.cards img{
+  width: 100%;
+  margin-bottom: 12px;
+  overflow: hidden;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -497,6 +524,10 @@ html {
 
 .justify-between {
   justify-content: space-between;
+}
+
+.flex-wr {
+  flex-wrap: wrap;
 }
 
 .gap-12 {
@@ -862,3 +893,5 @@ body {
     line-height: 1.75rem;
   }
 }
+
+
