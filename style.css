@@ -93,3 +93,40 @@ a:hover {
 .tracking-wider {
   letter-spacing: 0.05em;
 }
+
+/* Produtos Section */
+.produtos {
+  font: helvetica;
+  grid-template-rows: 2fr 1fr 1fr;
+  background-color: rgb(241, 174, 73);
+  width: 300px;
+  height: 500px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.produtos img {
+
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.content{
+  padding: 15px;
+}
+
+.content h1 {
+  margin: 0;
+  font: bold 20px helvetica;
+  color: #7a3e12;
+  
+}
+
+.content p {
+  font: 15px helvetica;
+  color: #7a3e12;
+  line-height: 1.5em;
+  margin-top: 18px;
+}
+
