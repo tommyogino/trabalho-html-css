@@ -1,152 +1,158 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Sobre Nós - Ateliê Cacau</title>
-  <link rel="stylesheet" href="style.css">
-  <style>
-    .header {
-      background-color: rgb(103 45 9);
-      padding: 0 24px;
-      height: 48px;
-      color: white;
-      display: flex;
-      align-items: center;
-    }
-    .header img {
-      max-height: 32px;
-      margin-right: 12px;
-    }
-    .main-section {
-      display: flex;
-      min-height: calc(100vh - 48px);
-    }
-    .about-text {
-      background-color: #666666;
-      color: white;
-      flex: 1;
-      padding: 2rem 2rem;
-      font-family: serif;
-      overflow-y: auto;
-      display: flex;
-      flex-direction: column; 
-      justify-content: center; 
-      align-items: center;    
-      text-align: center;  
-    }
-    .about-text h2 {
-      margin-bottom: 2rem;
-      color: #f1ae49;
-    }
-    .about-text p {
-    margin-bottom: 0.5rem;
-    }
-    .image-section {
-      flex: 1;
-      background-color: #cfcfcf; /* cinza claro */
-      position: relative;
-      overflow: hidden;
-    }
-    .image-section::before {
-      content: "";
-      position: absolute;
-      top: 0; bottom: 0; left: 0; right: 0;
-      background: url('https://images.unsplash.com/photo-1519681393784-d120267933ba?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80') no-repeat center center;
-      background-size: cover;
-      filter: brightness(0.3);
-      z-index: 1;
-    }
-    .image-content {
-      position: relative;
-      z-index: 2;
-      display: flex;
-      flex-wrap: wrap;
-      padding: 1rem;
-      gap: 1rem;
-      justify-content: center;
-      height: 100%;
-      overflow-y: auto;
-    }
-    .image-card {
-      background: white;
-      border-radius: 10px;
-      width: 140px;
-      box-shadow: 0 0 6px rgba(0,0,0,0.25);
-      overflow: hidden;
-      text-align: center;
-      transition: width 0.3s ease, height 0.3s ease;
-      position: relative;
-      z-index: 1;
-    }
-    .image-card:hover {
-      width: 600px;
-      height: 600px;
-      z-index: 10;
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Sobre Nós - Ateliê Cacau</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      .header {
+        background-color: rgb(103 45 9);
+        padding: 0 24px;
+        height: 48px;
+        color: white;
+        display: flex;
+        align-items: center;
       }
-    .image-card img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      display: block;
-    }
-    .image-card p {
-      margin: 0.5rem;
-      font-size: 0.9rem;
-      color: #7a3e12;
-      font-weight: 600;
-      font-family: helvetica;
-    }
-    @media(max-width: 768px) {
+      .header img {
+        max-height: 32px;
+        margin-right: 12px;
+      }
       .main-section {
-        flex-direction: column;
+        display: flex;
+        min-height: calc(100vh - 48px);
       }
       .about-text {
-        height: 50vh;
+        background-color: #666666;
+        color: white;
+        flex: 1;
+        padding: 2rem 2rem;
+        font-family: serif;
+        overflow-y: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+      }
+      .about-text h2 {
+        margin-bottom: 2rem;
+        color: #f1ae49;
+      }
+      .about-text p {
+        margin-bottom: 0.5rem;
       }
       .image-section {
-        height: 50vh;
+        flex: 1;
+        background-color: #cfcfcf; /* cinza claro */
+        position: relative;
+        overflow: hidden;
       }
-    }
-    .overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  background-color: rgba(0,0,0,0.8);
-  display: none;
-  justify-content: center;
-  align-items: center;
-  z-index: 9999;
-  cursor: pointer;
-}
+      .image-section::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: url("https://images.unsplash.com/photo-1519681393784-d120267933ba?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80")
+          no-repeat center center;
+        background-size: cover;
+        filter: brightness(0.3);
+        z-index: 1;
+      }
+      .image-content {
+        position: relative;
+        z-index: 2;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 1rem;
+        gap: 1rem;
+        justify-content: center;
+        height: 100%;
+        overflow-y: auto;
+      }
+      .image-card {
+        background: white;
+        border-radius: 10px;
+        width: 140px;
+        box-shadow: 0 0 6px rgba(0, 0, 0, 0.25);
+        overflow: hidden;
+        text-align: center;
+        transition: width 0.3s ease, height 0.3s ease;
+        position: relative;
+        z-index: 1;
+      }
+      .image-card:hover {
+        width: 600px;
+        height: 600px;
+        z-index: 10;
+      }
+      .image-card img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+      }
+      .image-card p {
+        margin: 0.5rem;
+        font-size: 0.9rem;
+        color: #7a3e12;
+        font-weight: 600;
+        font-family: helvetica;
+      }
+      @media (max-width: 768px) {
+        .main-section {
+          flex-direction: column;
+        }
+        .about-text {
+          height: 50vh;
+        }
+        .image-section {
+          height: 50vh;
+        }
+      }
+      .overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.8);
+        display: none;
+        justify-content: center;
+        align-items: center;
+        z-index: 9999;
+        cursor: pointer;
+      }
 
-.overlay img {
-  max-width: 90vw;
-  max-height: 90vh;
-  border-radius: 12px;
-  box-shadow: 0 0 20px rgba(255,255,255,0.5);
-  transition: transform 0.3s ease;
-}
+      .overlay img {
+        max-width: 90vw;
+        max-height: 90vh;
+        border-radius: 12px;
+        box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+        transition: transform 0.3s ease;
+      }
 
-.overlay.show {
-  display: flex;
-}
-  </style>
-</head>
-<body>
-  <header class="header">
-    <img src="imagens/logo-cacau.jpeg" alt="Logo Ateliê Cacau" />
-    <h1 class="header-text font-serif tracking-wide text-2xl">Ateliê Cacau</h1>
-  </header>
+      .overlay.show {
+        display: flex;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <img src="imagens/logo-cacau.jpeg" alt="Logo Ateliê Cacau" />
+      <h1 class="header-text font-serif tracking-wide text-2xl">
+        Ateliê Cacau
+      </h1>
+    </header>
 
-  <main class="main-section">
-    <section class="about-text">
-      <h2>Quem Somos</h2>
-      <p> A história começou quando um relógio esquisito </p>
-      <p> Grudou no pulso dele, vindo lá do infinito </p>
-      <p> Agora tem poderes e com eles faz bonito </p>
+    <main class="main-section">
+      <section class="about-text">
+        <h2>Quem Somos</h2>
+        <p>A história começou quando um relógio esquisito</p>
+        <p>Grudou no pulso dele, vindo lá do infinito</p>
+        <p>Agora tem poderes e com eles faz bonito</p>
         <p>É o Ben 10 (Ben 10)</p>
 
         <p>Se acaso encontrá-lo, você vai se admirar</p>
@@ -154,10 +160,10 @@
         <p>Em um ser alienígena que bota pra quebrar</p>
         <p>É o Ben 10</p>
         <p>(Ben 10)</p>
-      
-      <h2></h2>
-      <h2>Nossa História</h2>
-        <p> Com seus poderes vai combater</p>
+
+        <h2></h2>
+        <h2>Nossa História</h2>
+        <p>Com seus poderes vai combater</p>
         <p>Os inimigos e vai vencer</p>
         <p>Ele não foge do opressor</p>
 
@@ -165,30 +171,28 @@
         <p>Seja onde for</p>
         <p>Ben 10</p>
 
-      
-      <p>Um, dois, três, Ben 10</p>
-      <p>Quatro, cinco, seis, Ben 10</p>
-      <p>Sete, oito, nove, Ben 10</p>
-      
-    </section>
+        <p>Um, dois, três, Ben 10</p>
+        <p>Quatro, cinco, seis, Ben 10</p>
+        <p>Sete, oito, nove, Ben 10</p>
+      </section>
 
-    <section class="image-section">
-      <div class="image-content">
-        <div class="image-card">
-          <img src="imagens/Casa Generica.jpg" alt="Estabelecimento 1" />
-          <div class="overlay"></div>
-          <p>Nosso Ateliê</p>
+      <section class="image-section">
+        <div class="image-content">
+          <div class="image-card">
+            <img src="imagens/Casa Generica.jpg" alt="Estabelecimento 1" />
+            <div class="overlay"></div>
+            <p>Nosso Ateliê</p>
+          </div>
+          <div class="image-card">
+            <img src="imagens/Cacau.jpg" alt="Cacau" />
+            <p>Cacau na Fazenda</p>
+          </div>
+          <div class="image-card">
+            <img src="imagens/Cacau sendo produzido.jpeg" alt="Produção" />
+            <p>Produção Artesanal</p>
+          </div>
         </div>
-        <div class="image-card">
-          <img src="imagens/Cacau.jpg" alt="Cacau" />
-          <p>Cacau na Fazenda</p>
-        </div>
-        <div class="image-card">
-          <img src="imagens/Cacau sendo produzido.jpeg" alt="Produção" />
-          <p>Produção Artesanal</p>
-        </div>
-      </div>
-    </section>
-  </main>
-</body>
+      </section>
+    </main>
+  </body>
 </html>
