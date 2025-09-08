@@ -213,7 +213,13 @@ progress {
 }
 
 summary {
-  display: list-item;
+  display: block; 
+  list-style: none;
+}
+
+summary::-webkit-details-marker,
+summary::marker {
+  display: none;
 }
 
 blockquote,
