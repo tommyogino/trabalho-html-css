@@ -894,4 +894,36 @@ body {
   }
 }
 
+/* <---- estilização cards de produtos ----> */
 
+.teste {
+  display: grid;
+  grid-template-rows: 1fr 2fr;
+  overflow: hidden;
+  width: 286px;
+  height: 468px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  transition: 0.5s;
+  
+}
+
+.c-bod{
+  grid-row: 2;
+  padding: 10px;
+  background-color: #FFFFFF;
+  overflow: hidden;
+  
+}
+
+.titulo{
+  padding: 3px;
+}
+
+.teste:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transform: scale(1.05);
+  transition: all 0.3s ease-in-out;
+}
+
+/* <---- estilização cards de produtos ----> */
