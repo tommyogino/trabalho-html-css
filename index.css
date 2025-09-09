@@ -70,31 +70,31 @@ body {
   margin: 0px;
   line-height: inherit;
 }
-body.dark {
+body:has(#darkModeToggle:checked) {
   background: #181818;
   color: #f3e9e1;
 }
-body.dark .bg-\[\#fffbf9\] {
+body:has(#darkModeToggle:checked) .bg-\[\#fffbf9\] {
   background: #181818;
 }
-body.dark .bg-white {
+body:has(#darkModeToggle:checked) .bg-white {
   background: #232323;
 }
-body.dark .text-\[\#672d09\],
-body.dark .font-serif,
-body.dark h1,
-body.dark h2,
-body.dark h3,
-body.dark h4 {
+body:has(#darkModeToggle:checked) .text-\[\#672d09\],
+body:has(#darkModeToggle:checked) .font-serif,
+body:has(#darkModeToggle:checked) h1,
+body:has(#darkModeToggle:checked) h2,
+body:has(#darkModeToggle:checked) h3,
+body:has(#darkModeToggle:checked) h4 {
   color: #ffb86b;
 }
-body.dark .text-gray-600 {
+body:has(#darkModeToggle:checked) .text-gray-600 {
   color: #e0cfc2;
 }
-body.dark .bg-\[\#672d09\] {
+body:has(#darkModeToggle:checked) .bg-\[\#672d09\] {
   background: #2d1604;
 }
-body.dark .text-\[\#fffbf9\] {
+body:has(#darkModeToggle:checked) .text-\[\#fffbf9\] {
   color: #f3e9e1;
 }
 
