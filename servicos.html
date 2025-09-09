@@ -28,9 +28,13 @@
             <a href="#precos" class="hover:underline">Preços</a>
             <a href="contato.html" class="hover:underline">Contato</a>
           </nav>
+          <label style="display:flex;align-items:center;gap:4px;cursor:pointer;">
+            <input type="checkbox" id="darkModeToggle" hidden />
+            <span style="font-size:14px;">Modo escuro</span>
+          </label>
         </header>
       <section id="produtos" class="py-20 bg-[#fffbf9]">
-        <div class="container mx-auto px-6">
+        
         <div class="text-center mb-16"><h3 class="text-4xl md:text-5xl font-bold mb-4 font-serif text-[#672d09]">Serviços que oferecemos</h3>
           <p class="text-lg text-gray-600 max-w-2xl mx-auto">Cada chocolate é uma obra de arte, criada com ingredientes selecionados e muito carinho</p>
         </div>
@@ -121,4 +125,10 @@
         </footer>
       </div>
   </body>
+  <script>
+  const toggle = document.getElementById('darkModeToggle');
+  toggle.addEventListener('change', function () {
+    document.body.classList.toggle('dark', this.checked);
+  });
+</script>
 </html>

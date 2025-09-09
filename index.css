@@ -70,6 +70,33 @@ body {
   margin: 0px;
   line-height: inherit;
 }
+body.dark {
+  background: #181818;
+  color: #f3e9e1;
+}
+body.dark .bg-\[\#fffbf9\] {
+  background: #181818;
+}
+body.dark .bg-white {
+  background: #232323;
+}
+body.dark .text-\[\#672d09\],
+body.dark .font-serif,
+body.dark h1,
+body.dark h2,
+body.dark h3,
+body.dark h4 {
+  color: #ffb86b;
+}
+body.dark .text-gray-600 {
+  color: #e0cfc2;
+}
+body.dark .bg-\[\#672d09\] {
+  background: #2d1604;
+}
+body.dark .text-\[\#fffbf9\] {
+  color: #f3e9e1;
+}
 
 hr {
   height: 0px;
@@ -213,7 +240,7 @@ progress {
 }
 
 summary {
-  display: block; 
+  display: block;
   list-style: none;
 }
 
@@ -1016,5 +1043,5 @@ body {
   height: 1em;
 }
 .bd-mode-toggle .dropdown-menu .active .bi {
-  display: block !important;
+  display: block;
 }
