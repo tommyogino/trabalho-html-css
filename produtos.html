@@ -4,7 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="index.css" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
     <title>Ateliê Cacau - Chocolates Artesanais Personalizados</title>
   </head>
   <body>
@@ -23,72 +28,84 @@
           </div>
           <nav class="space-x-4 hidden md:flex">
             <a href="index.html" class="hover:underline">Home</a>
-            <a href="#quem-somos" class="hover:underline">Quem Somos</a>
-            <a href="#produtos" class="hover:underline">Produtos</a>
+            <a href="quem_somos.html" class="hover:underline">Quem Somos</a>
+            <a href="produtos.html" class="hover:underline">Produtos</a>
             <a href="servicos.html" class="hover:underline">Serviços</a>
             <a href="#precos" class="hover:underline">Preços</a>
             <a href="contato.html" class="hover:underline">Contato</a>
           </nav>
         </header>
         <section>
-          <div>
-            <h2 class="text-center">
-  Detalhes que derretem <br />
-  no paladar e no coração
-          </h2>
-            <p>
-              Chocolates artesanais personalizados com arte, sabor e emoção.
-            </p>
-            <button>Comece a personalizar</button>
+          <div class="grid text-center">
+            <button type="button" class="btn btn-outline-secondary g-col-4">
+              Secondary
+            </button>
           </div>
         </section>
 
-         <div class="produtos-content flex gap-8 flex-wrap justify-center p-4 ">
+        <div class="produtos-content flex gap-8 flex-wrap justify-center p-4">
+          <div class="card" style="width: 18rem">
+            <img
+              src="imagens/chocolate-amargo.png"
+              class="card-img-top"
+              alt="Chocolate Amargo"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Chocolate Amargo</h5>
 
-            
-            <div class="card" style="width: 18rem;">
-          <img src="imagens/chocolate-amargo.png" class="card-img-top" alt="Chocolate Amargo"> 
-          <div class="card-body">
-           <h5 class="card-title">Chocolate Amargo</h5>
+              <p class="card-text">
+                Nossos chocolates são feitos com ingredientes selecionados,
+                garantindo uma experiência única a cada mordida. Desde o
+                clássico ao exótico, temos opções para todos os gostos.
+              </p>
+              <a href="#" class="btn btn-secondary">Comprar</a>
+            </div>
+          </div>
 
+          <div class="card" style="width: 18rem">
+            <img
+              src="imagens/chocolate-leite.png"
+              class="card-img-top"
+              alt="Chocolate ao Leite"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Chocolates ao leite</h5>
+              <p class="card-text">
+                Nossos chocolates são feitos com ingredientes selecionados,
+                garantindo uma experiência única a cada mordida. Desde o
+                clássico ao exótico, temos opções para todos os gostos.
+              </p>
+              <a href="#" class="btn btn-secondary">Comprar</a>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem">
+            <img src="imagens/trufa.png" class="card-img-top" alt="Trufa" />
+            <div class="card-body">
+              <h5 class="card-title">Trufa</h5>
+              <p class="card-text">
+                Deliciosas trufas recheadas, perfeitas para presentear ou se
+                deliciar.
+              </p>
+              <a href="#" class="btn btn-secondary">Comprar</a>
+            </div>
+          </div>
 
-              <p class="card-text">Nossos chocolates são feitos com ingredientes selecionados, 
-                    garantindo uma experiência única a cada mordida. 
-                    Desde o clássico ao exótico, temos opções para todos os gostos.</p>
-                   <a href="#" class="btn btn-secondary">Comprar</a>
-                  </div>
-                </div>
-
-                <div class="card" style="width: 18rem;">
-         <img src="imagens/chocolate-leite.png" class="card-img-top" alt="Chocolate ao Leite">
-          <div class="card-body">
-            <h5 class="card-title">Chocolates ao leite</h5>
-              <p class="card-text">Nossos chocolates são feitos com ingredientes selecionados, 
-                    garantindo uma experiência única a cada mordida. 
-                    Desde o clássico ao exótico, temos opções para todos os gostos.</p>
-                    <a href="#" class="btn btn-secondary">Comprar</a>
-                  </div>
-                </div>
-<div class="card" style="width: 18rem;">
-  <img src="imagens/trufa.png" class="card-img-top" alt="Trufa">
-  <div class="card-body">
-    <h5 class="card-title">Trufa</h5>
-    <p class="card-text">Deliciosas trufas recheadas, perfeitas para presentear ou se deliciar.</p>
-    <a href="#" class="btn btn-secondary">Comprar</a>
-  </div>
-</div>
-
-<div class="card" style="width: 18rem;">
-  <img src="imagens/90-cacau.png" class="card-img-top" alt="Chocolate 90% Cacau">
-  <div class="card-body">
-    <h5 class="card-title">90% Cacau</h5>
-    <p class="card-text">Chocolate intenso, ideal para quem aprecia sabores fortes e autênticos.</p>
-   <a href="#" class="btn btn-secondary">Comprar</a>
-  </div>
-</div>
-
+          <div class="card" style="width: 18rem">
+            <img
+              src="imagens/90-cacau.png"
+              class="card-img-top"
+              alt="Chocolate 90% Cacau"
+            />
+            <div class="card-body">
+              <h5 class="card-title">90% Cacau</h5>
+              <p class="card-text">
+                Chocolate intenso, ideal para quem aprecia sabores fortes e
+                autênticos.
+              </p>
+              <a href="#" class="btn btn-secondary">Comprar</a>
+            </div>
+          </div>
         </div>
-      </div>
       </div>
     </div>
     <footer class="bg-[#672d09] text-white py-8">
@@ -96,11 +113,11 @@
         <div class="mb-4">
           <h2 class="text-2xl font-bold font-serif mb-2">Ateliê Cacau</h2>
           <p class="text-sm opacity-80">
-           Chocolates artesanais que tocam o coração
+            Chocolates artesanais que tocam o coração
           </p>
         </div>
         <p class="text-sm opacity-70">
-          © 2025 Ateliê Cacau. Todos os direitos reservados.
+          ©️ 2025 Ateliê Cacau. Todos os direitos reservados.
         </p>
       </div>
     </footer>

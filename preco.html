@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ateliê Cacau - Tabela de Preços</title>
+  <style>
+    :root {
+      --verde: #5e6340;
+      --marrom: #672d09;
+      --cinza-escuro: #0f0e0e;
+      --branco: #fffbf9;
+    }
+    body {
+      background-color: var(--branco);
+      font-family: Arial, sans-serif;
+      color: var(--cinza-escuro);
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: var(--marrom);
+      color: var(--branco);
+      padding: 1rem 1.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    header .logo-container {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+    header .logo-container img {
+      height: 3rem;
+      border-radius: 0.25rem;
+      width: auto;
+    }
+    header h1 {
+      font-family: 'Georgia', serif;
+      font-size: 1.5rem;
+      margin: 0;
+      letter-spacing: 0.05em;
+    }
+    nav a {
+      color: var(--branco);
+      text-decoration: none;
+      margin-left: 1rem;
+      font-weight: 500;
+      transition: text-decoration 0.3s ease;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    .table-wrapper {
+      max-width: 900px;
+      margin: 100px auto 2rem auto;
+      box-shadow: 0 8px 20px rgba(94, 99, 64, 0.3);
+      border-radius: 15px;
+      background-color: var(--branco);
+      overflow: hidden;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      padding-bottom: 1rem;
+    }
+    .table-wrapper:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 15px 30px rgba(94, 99, 64, 0.5);
+    }
+    .table-title {
+      margin: 0;
+      padding: 1rem 0;
+      background-color: var(--marrom);
+      color: var(--branco);
+      font-family: 'Georgia', serif;
+      font-size: 1.8rem;
+      font-weight: 600;
+      text-align: center;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+      user-select: none;
+      box-shadow: inset 0 -3px 5px rgba(0,0,0,0.2);
+    }
+    table {
+      width: 100%;
+      border-collapse: separate;
+      border-spacing: 0;
+      background-color: var(--branco);
+    }
+    thead tr {
+      background-color: var(--verde);
+      color: var(--branco);
+      font-weight: 600;
+    }
+    thead th {
+      padding: 1rem 1.2rem;
+      border: none;
+    }
+    tbody tr:nth-child(even) {
+      background-color: #e6e9d6;
+    }
+    tbody tr:nth-child(odd) {
+      background-color: var(--branco);
+    }
+    tbody td {
+      padding: 1rem 1.2rem;
+      color: var(--cinza-escuro);
+      vertical-align: middle;
+      border: none;
+    }
+    tbody td.descricao {
+      text-align: left;
+    }
+    tbody td.preco {
+      font-weight: 700;
+      color: var(--marrom);
+      text-align: right;
+    }
+    /* Responsividade simples */
+    @media (max-width: 576px) {
+      .table-wrapper {
+        margin: 6rem 1rem 2rem 1rem;
+      }
+      .table-title {
+        font-size: 1.4rem;
+        padding: 0.8rem 0;
+      }
+      thead {
+        display: none;
+      }
+      tbody td {
+        display: block;
+        text-align: right;
+        padding-left: 50%;
+        position: relative;
+      }
+      tbody td.descricao,
+      tbody td.preco {
+        text-align: right;
+      }
+      tbody td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 1rem;
+        width: 45%;
+        padding-left: 0.5rem;
+        font-weight: 600;
+        text-align: left;
+        color: var(--marrom);
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo-container">
+      <img src="imagens/logo-cacau.jpeg" alt="Logo Ateliê Cacau" />
+      <h1>Ateliê Cacau</h1>
+    </div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="quem_somos.html">Quem Somos</a>
+      <a href="produtos.html">Produtos</a>
+      <a href="servicos.html">Serviços</a>
+      <a href="#precos">Preços</a>
+      <a href="contato.html">Contato</a>
+    </nav>
+  </header>
+  <section id="precos">
+    <div class="table-wrapper">
+      <h2 class="table-title">Tabela de Preços</h2>
+      <div class="table-responsive">
+        <table class="text-center align-middle">
+          <thead>
+            <tr>
+              <th>Produto</th>
+              <th>Descrição</th>
+              <th>Preço Unitário</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td data-label="Produto">Chocolate Amargo</td>
+              <td data-label="Descrição" class="descricao">Ingredientes selecionados para sabor intenso</td>
+              <td data-label="Preço" class="preco">R$ 25,00</td>
+            </tr>
+            <tr>
+              <td data-label="Produto">Chocolate ao Leite</td>
+              <td data-label="Descrição" class="descricao">Clássico e cremoso, para todos os gostos</td>
+              <td data-label="Preço" class="preco">R$ 22,00</td>
+            </tr>
+            <tr>
+              <td data-label="Produto">Trufa</td>
+              <td data-label="Descrição" class="descricao">Recheadas, perfeitas para presentear</td>
+              <td data-label="Preço" class="preco">R$ 18,00</td>
+            </tr>
+            <tr>
+              <td data-label="Produto">90% Cacau</td>
+              <td data-label="Descrição" class="descricao">Para quem aprecia sabores fortes e autênticos</td>
+              <td data-label="Preço" class="preco">R$ 30,00</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
