@@ -1,33 +1,33 @@
 # 🌐 Projeto HTML/CSS
 
-## Trabalho HTML e CSS da materia de Desenvolvimento Web do curso de Engenharia de Software
+### Trabalho HTML e CSS da materia de Desenvolvimento Web do curso de Engenharia de Software
 
 Este projeto tem o intuito de aplicar e aprofundar os conhecimentos das linguagens de HTML e CSS. O projeto do site foi baseado em cima de uma empresa hipotetica criada por um dos integrantes do grupo.
 
+## 🔗 Link de Acesso
+
+link do github pages(quando o projeto ficar pronto)
+
 ---
 
-# 🛠️ Linguagens e Ferramentas
+# 📂 Estrutura do Projeto
+
+Site baseado em templates do Bootstrap e no site utilizado no wireframe para referência.
+
+## 🛠️ Linguagens e Ferramentas
 
 <img align="left" alt="html" width="50px" style="padding-right:10px" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-plain-wordmark.svg" />
 <img align="left" alt="css" width="50px" style="padding-right:10px" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-plain-wordmark.svg" />
 <img align="left" alt="git" width="50px" style="padding-right:10px" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" />
-<img align="left" alt="github" width="50px" style="padding-right:10px" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" />
 <img align="left" alt="vscode" width="50px" style="padding-right:10px" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg" />
+<img align="left" alt="bootstrap" width="50px" style="padding-right:10px" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg" />
+<img align="left" alt="bootstrap" width="50px" style="padding-right:10px" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original-wordmark.svg" />
 <br/>
-
----
-
-## Link de Acesso
-
-- link do github pages(quando o projeto ficar pronto)
-
-# 📂 Estrutura do Projeto
-
-to do(dps do site ficar pronto)
+<br/>
 
 ## 🎯 Objetivo
 
-lero lero lero
+O site criado é baseado em uma empresa fictícia de chocolates personalizados, feito para apresentar os produtos, preços, etc.
 
 ### 🎨 Paleta de Cores
 
