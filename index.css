@@ -940,7 +940,6 @@ body {
 /* rtl:end:ignore */
 
 /* <---- estilização cards de produtos ----> */
-
 .teste {
   display: grid;
   grid-template-columns: 1fr;
@@ -956,7 +955,6 @@ body {
 .c-bod {
   grid-column: 1;
   grid-row: 2;
-  grid-template-rows: 1fr 2fr;
   justify-items: center;
   grid-template-rows: 1fr 2fr;
   padding: 20px;
