@@ -521,7 +521,6 @@ legend + * {
   height: auto;
 }
 [type="search"] {
-  -webkit-appearance: textfield;
   outline-offset: -2px;
 }
 [type="search"]::-webkit-search-cancel-button {
@@ -540,7 +539,6 @@ legend + * {
 }
 ::file-selector-button {
   font: inherit;
-  -webkit-appearance: button;
 }
 output {
   display: inline-block;
