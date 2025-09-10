@@ -977,18 +977,19 @@ body {
   transition: all 0.3s ease-in-out;
 }
 
-/* .teste:fullscreen {
-  transform: scale(3);
-} */
-
 .card-text {
   word-wrap: break-word;
 }
 
 .btn {
-  margin-top: 30px;
+  margin-top: 20px;
   width: 200px;
   height: 45px;
+}
+
+.btn-primary {
+  background-color: #805300 !important;
+  --bs-btn-border-color: #805e00 !important;
 }
 
 .container-filtros {
@@ -997,6 +998,13 @@ body {
   gap: 10px;
   justify-items: center;
 }
+
+.bt {
+  width: 200px;
+  height: 70px;
+  font-size: 25px !important;
+}
+
 /* Featurettes
 ------------------------- */
 
