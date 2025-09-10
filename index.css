@@ -113,7 +113,7 @@ pre {
   font-variation-settings: normal;
   font-size: 1em;
 }
-.img-rec{
+.img-rec {
   object-fit: cover;
 }
 small {
@@ -347,7 +347,7 @@ html {
   z-index: 10;
 }
 
-.cards{
+.cards {
   width: 140px;
   height: auto;
   background-color: #ffe9b9;
@@ -357,7 +357,7 @@ html {
 
 .cards h1 {
   text-align: center;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   font-size: large;
   padding: 0.5rem;
 }
@@ -366,7 +366,7 @@ html {
   padding: 1.5rem;
 }
 
-.cards img{
+.cards img {
   width: 100%;
   margin-bottom: 12px;
   overflow: hidden;
@@ -894,4 +894,61 @@ body {
   }
 }
 
+/* <---- estilização cards de produtos ----> */
 
+.teste {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 2fr;
+  overflow: hidden;
+  width: 286px;
+  height: 600px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  transition: 0.5s;
+}
+
+.c-bod {
+  grid-column: 1;
+  grid-row: 2;
+  grid-template-rows: 1fr 2fr;
+  justify-items: center;
+  grid-template-rows: 1fr 2fr;
+  padding: 20px;
+  background-color: #ffffff;
+  overflow: hidden;
+  height: auto;
+}
+
+.titulo {
+  font: bold 24px system-ui, apple-system, sans-serif;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+.teste:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transform: scale(1.05);
+  transition: all 0.3s ease-in-out;
+}
+
+/* .teste:fullscreen {
+  transform: scale(3);
+} */
+
+.card-text {
+  word-wrap: break-word;
+}
+
+.btn {
+  margin-top: 30px;
+  width: 200px;
+  height: 45px;
+}
+
+.container-filtros {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  justify-items: center;
+}
