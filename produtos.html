@@ -10,6 +10,10 @@
       integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
       crossorigin="anonymous"
     />
+    
+    <link href="/src/style.css" rel="stylesheet" />
+    <link rel="icon" href="imagens/logo-cacau.jpeg" type="image/x-icon" />
+
     <title>Ateliê Cacau - Chocolates Artesanais Personalizados</title>
   </head>
   <body>
@@ -27,22 +31,59 @@
             <h1 class="font-serif text-2xl tracking-wide">Ateliê Cacau</h1>
           </div>
           <nav class="space-x-4 hidden md:flex">
+
+            <a href="index.html" class="hover:underline text-white">Home</a>
+            <a href="#quem-somos" class="hover:underline text-white"
+              >Quem Somos</a
+            >
+            <a href="#produtos" class="hover:underline text-white">Produtos</a>
+            <a href="servicos.html" class="hover:underline text-white"
+              >Serviços</a
+            >
+            <a href="#precos" class="hover:underline text-white">Preços</a>
+            <a href="contato.html" class="hover:underline text-white"
+              >Contato</a
+            >
             <a href="index.html" class="hover:underline">Home</a>
             <a href="quem_somos.html" class="hover:underline">Quem Somos</a>
             <a href="produtos.html" class="hover:underline">Produtos</a>
             <a href="servicos.html" class="hover:underline">Serviços</a>
-            <a href="#precos" class="hover:underline">Preços</a>
+            <a href="preco.html" class="hover:underline">Preços</a>
             <a href="contato.html" class="hover:underline">Contato</a>
           </nav>
         </header>
         <section>
+          <div class="container-filtros">
+            <button type="button" class="btn btn-outline-secondary bt1">
+              Filtro
+            </button>
+            <button type="button" class="btn btn-outline-secondary bt2">
+              Preços
           <div class="grid text-center">
             <button type="button" class="btn btn-outline-secondary g-col-4">
               Secondary
             </button>
           </div>
         </section>
+        <!-- Cards dos Produtos -->
+        <div class="produtos-content flex gap-8 flex-wrap justify-center p-4">
+          <div class="teste .hover\:shadow-xl:hover">
+            <img src="imagens/90-cacau.jpg" alt="..." />
+            <div class="c-bod">
+              <h5 class="titulo">90% Cacau</h5>
+              <p class="card-text">
+                Chocolate intenso e puro, com 90% de cacau, para quem aprecia o
+                sabor verdadeiro e marcante do cacau. Uma experiência rica e
+                sofisticada em cada pedaço.
+              </p>
+              <a href="#" class="btn btn-primary">Comprar</a>
+            </div>
+          </div>
 
+          <div class="teste .hover\:shadow-xl:hover">
+            <img src="imagens/chocolate-ao-leite.jpg" alt="..." />
+            <div class="c-bod">
+              <h5 class="titulo">Chocolates ao leite</h5>
         <div class="produtos-content flex gap-8 flex-wrap justify-center p-4">
           <div class="card" style="width: 18rem">
             <img
@@ -52,12 +93,19 @@
             />
             <div class="card-body">
               <h5 class="card-title">Chocolate Amargo</h5>
-
               <p class="card-text">
                 Nossos chocolates são feitos com ingredientes selecionados,
                 garantindo uma experiência única a cada mordida. Desde o
                 clássico ao exótico, temos opções para todos os gostos.
               </p>
+              <a href="#" class="btn btn-primary">Comprar</a>
+            </div>
+          </div>
+
+          <div class="teste .hover\:shadow-xl:hover">
+            <img src="imagens/chocolate-meio-amargo.jpg" alt="..." />
+            <div class="c-bod">
+              <h5 class="titulo">Chocolate Amargo</h5>
               <a href="#" class="btn btn-secondary">Comprar</a>
             </div>
           </div>
@@ -75,6 +123,20 @@
                 garantindo uma experiência única a cada mordida. Desde o
                 clássico ao exótico, temos opções para todos os gostos.
               </p>
+              <a href="#" class="btn btn-primary">Comprar</a>
+            </div>
+          </div>
+
+          <div class="teste .hover\:shadow-xl:hover">
+            <img src="imagens/trufaa.png" alt="..." />
+            <div class="c-bod">
+              <h5 class="titulo">Trufa</h5>
+              <p class="card-text">
+                Nossa trufa é feita com chocolate puro e recheio cremoso,
+                proporcionando uma explosão de sabor a cada mordida. Perfeita
+                para quem ama um doce sofisticado.
+              </p>
+              <a href="#" class="btn btn-primary">Comprar</a>
               <a href="#" class="btn btn-secondary">Comprar</a>
             </div>
           </div>
@@ -108,6 +170,7 @@
         </div>
       </div>
     </div>
+
     <footer class="bg-[#672d09] text-white py-8">
       <div class="text-center container mx-auto px-6">
         <div class="mb-4">
