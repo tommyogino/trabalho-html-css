@@ -80,6 +80,11 @@ body:has(#darkModeToggle:checked) .bg-\[\#fffbf9\] {
 body:has(#darkModeToggle:checked) .bg-white {
   background: #232323;
 }
+
+body:has(#darkModeToggle:checked) .bg-\[\#fffbf8\] {
+  background: #232323;
+}
+
 body:has(#darkModeToggle:checked) .text-\[\#672d09\],
 body:has(#darkModeToggle:checked) .font-serif,
 body:has(#darkModeToggle:checked) h1,
@@ -940,44 +945,6 @@ body {
 /* rtl:end:ignore */
 
 /* <---- estilização cards de produtos ----> */
-.teste {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr 2fr;
-  overflow: hidden;
-  width: 286px;
-  height: 600px;
-  border-radius: 10px;
-  border: 1px solid #ddd;
-  transition: 0.5s;
-}
-
-.c-bod {
-  grid-column: 1;
-  grid-row: 2;
-  justify-items: center;
-  grid-template-rows: 1fr 2fr;
-  padding: 20px;
-  background-color: #ffffff;
-  overflow: hidden;
-  height: auto;
-}
-
-.titulo {
-  font: bold 24px system-ui, apple-system, sans-serif;
-  padding: 5px;
-  margin-bottom: 10px;
-}
-
-.teste:hover {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  transform: scale(1.05);
-  transition: all 0.3s ease-in-out;
-}
-
-.card-text {
-  word-wrap: break-word;
-}
 
 .btn {
   margin-top: 20px;
@@ -1001,6 +968,12 @@ body {
   width: 200px;
   height: 70px;
   font-size: 25px !important;
+  color: #672d09 !important;
+  border-color: #672d09 !important;
+  --bs-btn-hover-bg: #c05513 !important;
+  --bs-btn-hover-border-color: #672d09 !important;
+  --bs-btn-active-bg: #b85416 !important;
+  --bs-btn-disabled-color: #672d09 !important;
 }
 
 /* Featurettes
