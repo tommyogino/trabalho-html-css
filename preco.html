@@ -1,207 +1,118 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Ateliê Cacau - Tabela de Preços</title>
-  <style>
-    :root {
-      --verde: #5e6340;
-      --marrom: #672d09;
-      --cinza-escuro: #0f0e0e;
-      --branco: #fffbf9;
-    }
-    body {
-      background-color: var(--branco);
-      font-family: Arial, sans-serif;
-      color: var(--cinza-escuro);
-      margin: 0;
-      padding: 0;
-    }
-    header {
-      background-color: var(--marrom);
-      color: var(--branco);
-      padding: 1rem 1.5rem;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-    }
-    header .logo-container {
-      display: flex;
-      align-items: center;
-      gap: 1rem;
-    }
-    header .logo-container img {
-      height: 3rem;
-      border-radius: 0.25rem;
-      width: auto;
-    }
-    header h1 {
-      font-family: 'Georgia', serif;
-      font-size: 1.5rem;
-      margin: 0;
-      letter-spacing: 0.05em;
-    }
-    nav a {
-      color: var(--branco);
-      text-decoration: none;
-      margin-left: 1rem;
-      font-weight: 500;
-      transition: text-decoration 0.3s ease;
-    }
-    nav a:hover {
-      text-decoration: underline;
-    }
-    .table-wrapper {
-      max-width: 900px;
-      margin: 100px auto 2rem auto;
-      box-shadow: 0 8px 20px rgba(94, 99, 64, 0.3);
-      border-radius: 15px;
-      background-color: var(--branco);
-      overflow: hidden;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-      padding-bottom: 1rem;
-    }
-    .table-wrapper:hover {
-      transform: translateY(-10px);
-      box-shadow: 0 15px 30px rgba(94, 99, 64, 0.5);
-    }
-    .table-title {
-      margin: 0;
-      padding: 1rem 0;
-      background-color: var(--marrom);
-      color: var(--branco);
-      font-family: 'Georgia', serif;
-      font-size: 1.8rem;
-      font-weight: 600;
-      text-align: center;
-      border-top-left-radius: 15px;
-      border-top-right-radius: 15px;
-      user-select: none;
-      box-shadow: inset 0 -3px 5px rgba(0,0,0,0.2);
-    }
-    table {
-      width: 100%;
-      border-collapse: separate;
-      border-spacing: 0;
-      background-color: var(--branco);
-    }
-    thead tr {
-      background-color: var(--verde);
-      color: var(--branco);
-      font-weight: 600;
-    }
-    thead th {
-      padding: 1rem 1.2rem;
-      border: none;
-    }
-    tbody tr:nth-child(even) {
-      background-color: #e6e9d6;
-    }
-    tbody tr:nth-child(odd) {
-      background-color: var(--branco);
-    }
-    tbody td {
-      padding: 1rem 1.2rem;
-      color: var(--cinza-escuro);
-      vertical-align: middle;
-      border: none;
-    }
-    tbody td.descricao {
-      text-align: left;
-    }
-    tbody td.preco {
-      font-weight: 700;
-      color: var(--marrom);
-      text-align: right;
-    }
-    /* Responsividade simples */
-    @media (max-width: 576px) {
-      .table-wrapper {
-        margin: 6rem 1rem 2rem 1rem;
-      }
-      .table-title {
-        font-size: 1.4rem;
-        padding: 0.8rem 0;
-      }
-      thead {
-        display: none;
-      }
-      tbody td {
-        display: block;
-        text-align: right;
-        padding-left: 50%;
-        position: relative;
-      }
-      tbody td.descricao,
-      tbody td.preco {
-        text-align: right;
-      }
-      tbody td::before {
-        content: attr(data-label);
-        position: absolute;
-        left: 1rem;
-        width: 45%;
-        padding-left: 0.5rem;
-        font-weight: 600;
-        text-align: left;
-        color: var(--marrom);
-      }
-    }
-  </style>
-</head>
-<body>
-  <header>
-    <div class="logo-container">
-      <img src="imagens/logo-cacau.jpeg" alt="Logo Ateliê Cacau" />
-      <h1>Ateliê Cacau</h1>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Ateliê Cacau - Chocolates Artesanais Personalizados</title>
+  </head>
+  <body>
+    <div id="root">
+      <div class="text-[#0f0e0e] bg-[#fffbf9] min-h-screen flex flex-col">
+        <header
+          class="bg-[#672d09] text-[#fffbf9] px-6 py-4 flex items-center justify-between"
+        >
+          <div class="flex items-center space-x-4">
+            <img
+              src="imagens/logo-cacau.jpeg"
+              alt="Logo Ateliê Cacau"
+              class="w-auto rounded h-12"
+            />
+            <h1 class="font-serif text-2xl tracking-wide">Ateliê Cacau</h1>
+          </div>
+          <nav class="space-x-4 hidden md:flex">
+            <a href="index.html" class="hover:underline">Home</a>
+            <a href="#quem-somos" class="hover:underline">Quem Somos</a>
+            <a href="#produtos" class="hover:underline">Produtos</a>
+            <a href="servicos.html" class="hover:underline">Serviços</a>
+            <a href="#precos" class="hover:underline">Preços</a>
+            <a href="contato.html" class="hover:underline">Contato</a>
+          </nav>
+          <label style="display:flex;align-items:center;gap:4px;cursor:pointer;">
+            <input type="checkbox" id="darkModeToggle" hidden />
+            <span style="font-size:14px;">Modo escuro</span>
+          </label>
+        </header>
+      <section id="produtos" class="py-20 bg-[#fffbf9]">
+        
+        <div class="text-center mb-16">
+          <h3 class="text-4xl md:text-5xl font-bold mb-4 font-serif text-[#672d09]">Nossos Preços</h3>
+          <p class="text-lg text-gray-600 max-w-2xl mx-auto">Cada chocolate é uma obra de arte, criada com ingredientes selecionados e muito carinho</p>
+        </div>
+  <div class="overflow-x-auto w-full flex justify-center mt-10 md:mt-14 lg:mt-16 px-4 sm:px-8 md:px-12 lg:px-20 xl:px-32">
+          <table class="w-full max-w-3xl bg-white rounded-2xl shadow-lg border border-[#e6e9d6] transition-transform duration-300 hover:scale-105 hover:shadow-2xl">
+            <thead>
+              <tr class="bg-[#5e6340] text-white">
+                <th class="py-3 px-6 text-left rounded-tl-lg">Produto</th>
+                <th class="py-3 px-6 text-left">Descrição</th>
+                <th class="py-3 px-6 text-right rounded-tr-lg">Preço Unitário</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="border-b border-gray-200 hover:bg-[#f3f1e7]">
+                <td class="py-3 px-6 font-semibold rounded-l-xl">Chocolate Amargo</td>
+                <td class="py-3 px-6">Ingredientes selecionados para sabor intenso</td>
+                <td class="py-3 px-6 text-right text-[#672d09] font-bold rounded-r-xl">R$ 25,00</td>
+              </tr>
+              <tr class="border-b border-gray-200 hover:bg-[#f3f1e7]">
+                <td class="py-3 px-6 font-semibold rounded-l-lg">Chocolate ao Leite</td>
+                <td class="py-3 px-6">Clássico e cremoso, para todos os gostos</td>
+                <td class="py-3 px-6 text-right text-[#672d09] font-bold rounded-r-lg">R$ 22,00</td>
+              </tr>
+              <tr class="border-b border-gray-200 hover:bg-[#f3f1e7]">
+                <td class="py-3 px-6 font-semibold rounded-l-lg">Trufa</td>
+                <td class="py-3 px-6">Recheadas, perfeitas para presentear</td>
+                <td class="py-3 px-6 text-right text-[#672d09] font-bold rounded-r-lg">R$ 18,00</td>
+              </tr>
+              <tr class="hover:bg-[#f3f1e7]">
+                <td class="py-3 px-6 font-semibold rounded-l-lg">90% Cacau</td>
+                <td class="py-3 px-6">Para quem aprecia sabores fortes e autênticos</td>
+                <td class="py-3 px-6 text-right text-[#672d09] font-bold rounded-r-lg">R$ 30,00</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="w-full flex justify-center">
+          <hr class="w-2/3 border-t-2 border-[#e6e9d6] my-12 md:my-20 lg:my-24" />
+        </div>
+        <div class="container mx-auto px-6 mt-10 md:mt-16 lg:mt-20">
+          <br>
+  <details>
+    <p>
+    <summary class="list-none text-center mb-16 mt-16 text-4xl md:text-4xl font-bold mb-4 font-serif text-[#672d09]">
+      Quero contratar!
+    </summary>
     </div>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="quem_somos.html">Quem Somos</a>
-      <a href="produtos.html">Produtos</a>
-      <a href="servicos.html">Serviços</a>
-      <a href="#precos">Preços</a>
-      <a href="contato.html">Contato</a>
-    </nav>
-  </header>
-  <section id="precos">
-    <div class="table-wrapper">
-      <h2 class="table-title">Tabela de Preços</h2>
-      <div class="table-responsive">
-        <table class="text-center align-middle">
-          <thead>
-            <tr>
-              <th>Produto</th>
-              <th>Descrição</th>
-              <th>Preço Unitário</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td data-label="Produto">Chocolate Amargo</td>
-              <td data-label="Descrição" class="descricao">Ingredientes selecionados para sabor intenso</td>
-              <td data-label="Preço" class="preco">R$ 25,00</td>
-            </tr>
-            <tr>
-              <td data-label="Produto">Chocolate ao Leite</td>
-              <td data-label="Descrição" class="descricao">Clássico e cremoso, para todos os gostos</td>
-              <td data-label="Preço" class="preco">R$ 22,00</td>
-            </tr>
-            <tr>
-              <td data-label="Produto">Trufa</td>
-              <td data-label="Descrição" class="descricao">Recheadas, perfeitas para presentear</td>
-              <td data-label="Preço" class="preco">R$ 18,00</td>
-            </tr>
-            <tr>
-              <td data-label="Produto">90% Cacau</td>
-              <td data-label="Descrição" class="descricao">Para quem aprecia sabores fortes e autênticos</td>
-              <td data-label="Preço" class="preco">R$ 30,00</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
+    <div class="flex flex-col items-center text-center text-lg text-gray-600 max-w-2xl mx-auto space-y-6">
+      <p>Você pode ver todos os nossos produtos clicando aqui.</p> <br> 
+      <a href="produtos.html"
+        class="bg-[#672d09] hover:bg-[#7d3510] px-6 py-4 rounded-full text-white font-semibold text-base transition-all duration-300 hover:scale-105 shadow-lg inline-block">
+        Produtos
+      </a> <br>
+      <p>E caso deseje produtos personalizados, basta entrar em contato clicando aqui.</p> <br>
+      <a href="contato.html"
+        class="bg-[#672d09] hover:bg-[#7d3510] px-6 py-4 rounded-full text-white font-semibold text-base transition-all duration-300 hover:scale-105 shadow-lg inline-block">
+        Contato
+      </a>
+        
+    </div>
+  </details>
+</div>
     </div>
   </section>
-</body>
+        <footer class="bg-[#672d09] text-white py-8">
+          <div class="text-center container mx-auto px-6">
+            <div class="mb-4">
+              <h2 class="text-2xl font-bold font-serif mb-2">Ateliê Cacau</h2>
+              <p class="text-sm opacity-80">
+                Chocolates artesanais que tocam o coracao
+              </p>
+            </div>
+            <p class="text-sm opacity-70">
+              © 2025 Ateliê Cacau. Todos os direitos reservados.
+            </p>
+          </div>
+        </footer>
+      </div>
+  </body>
 </html>
