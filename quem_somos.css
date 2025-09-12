@@ -1,10 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Playfair+Display:wght@700&display=swap');
 :root {
-    --cor-verde: #5e6e34;
-    --cor-marrom: #672d09;
-    --cor-cinza-escuro: #6f6b6a;
-    --cor-branco: #fffbf9;
-    --fonte-titulos: "Old Standard", serif;
-    --fonte-textos: "TT Drugs", sans-serif;
+    --cor-marrom-escuro: #672d09; 
+    --marrom-texto: #5c4742;      
+    --bege-fundo: #fffbf9;        
+    --dourado-titulos: #b8860b;
+    --branco: #ffffff;
+
+    --fonte-titulos: 'Playfair Display', serif;
+    --fonte-textos: 'Montserrat', sans-serif;
     --fonte-fallback: sans-serif;
 }
 
@@ -56,8 +59,8 @@ a {
 
 .about-text {
     flex: 1;
-    background-color: var(--cor-cinza-escuro);
-    color: var(--cor-branco);
+    background-color: var(--bege-fundo);
+    color: var(--marrom-texto);
     padding: 2rem;
     overflow-y: auto;
     display: flex;
@@ -69,13 +72,16 @@ a {
 
 .about-text h2 {
     font-family: var(--fonte-titulos), serif;
-    color: #f1ae49;
-    margin-bottom: 2rem;
+    color: var(--dourado-titulos);
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    margin-top: 1.5rem;
 }
 
 .about-text p {
     margin-bottom: 1rem;
-    line-height: 1.5;
+    line-height: 1.7;
+    font-size: 1.1rem;
     max-width: 600px;
 }
 
@@ -153,5 +159,21 @@ a {
 @media (max-width: 768px) {
     .main-section {
         flex-direction: column;
+    }
+
+    .about-text{
+        padding: 1.5rem;
+    }
+
+    .about-text h2 {
+        font-size: 1.5rem;
+    }
+
+    .about-text p {
+        font-size: 1rem;
+    }
+    
+    .image-section {
+        display: none;
     }
 }
