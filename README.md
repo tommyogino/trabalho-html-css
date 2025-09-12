@@ -6,7 +6,7 @@ Este projeto tem o intuito de aplicar e aprofundar os conhecimentos das linguage
 
 ## 🔗 Link de Acesso
 
-link do github pages(quando o projeto ficar pronto)
+<a href="https://tommyogino.github.io/trabalho-html-css/">Link do site no GitHub Pages</a>
 
 ---
 
@@ -79,9 +79,9 @@ O site criado é baseado em uma empresa fictícia de chocolates personalizados, 
   </tr>
   <tr align="center">
     <td>
-      <a href="https://github.com/Juliano-eng">
-        <img src="https://github.com/Juliano-eng.png" width="80" height="80"><br>
-        Juliano
+      <a href="https://github.com/alyaangel">
+        <img src="https://github.com/alyaangel.png" width="80" height="80"><br>
+        Alya
       </a>
     </td>
     <td>
