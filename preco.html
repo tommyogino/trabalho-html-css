@@ -147,6 +147,11 @@
         text-align: left;
         color: var(--marrom);
       }
+      tbody tr:hover {
+  background-color: #d4d9b8; 
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
     }
   </style>
 </head>
@@ -166,42 +171,47 @@
     </nav>
   </header>
   <section id="precos">
-    <div class="table-wrapper">
-      <h2 class="table-title">Tabela de Preços</h2>
-      <div class="table-responsive">
-        <table class="text-center align-middle">
-          <thead>
-            <tr>
-              <th>Produto</th>
-              <th>Descrição</th>
-              <th>Preço Unitário</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td data-label="Produto">Chocolate Amargo</td>
-              <td data-label="Descrição" class="descricao">Ingredientes selecionados para sabor intenso</td>
-              <td data-label="Preço" class="preco">R$ 25,00</td>
-            </tr>
-            <tr>
-              <td data-label="Produto">Chocolate ao Leite</td>
-              <td data-label="Descrição" class="descricao">Clássico e cremoso, para todos os gostos</td>
-              <td data-label="Preço" class="preco">R$ 22,00</td>
-            </tr>
-            <tr>
-              <td data-label="Produto">Trufa</td>
-              <td data-label="Descrição" class="descricao">Recheadas, perfeitas para presentear</td>
-              <td data-label="Preço" class="preco">R$ 18,00</td>
-            </tr>
-            <tr>
-              <td data-label="Produto">90% Cacau</td>
-              <td data-label="Descrição" class="descricao">Para quem aprecia sabores fortes e autênticos</td>
-              <td data-label="Preço" class="preco">R$ 30,00</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
+  <div class="table-wrapper">
+    <h2 class="table-title">Tabela de Preços</h2>
+    <div class="table-responsive">
+      <table class="text-center align-middle">
+        <thead>
+          <tr>
+            <th>Produto</th>
+            <th>Descrição</th>
+            <th>Preço Unitário</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td data-label="Produto">Chocolate Amargo</td>
+            <td data-label="Descrição" class="descricao">Ingredientes selecionados para sabor intenso</td>
+            <td data-label="Preço" class="preco">R$ 25,00</td>
+          </tr>
+          <tr>
+            <td data-label="Produto">Chocolate ao Leite</td>
+            <td data-label="Descrição" class="descricao">Clássico e cremoso, para todos os gostos</td>
+            <td data-label="Preço" class="preco">R$ 22,00</td>
+          </tr>
+          <tr>
+            <td data-label="Produto">Trufa</td>
+            <td data-label="Descrição" class="descricao">Recheadas, perfeitas para presentear</td>
+            <td data-label="Preço" class="preco">R$ 18,00</td>
+          </tr>
+          <tr>
+            <td data-label="Produto">90% Cacau</td>
+            <td data-label="Descrição" class="descricao">Para quem aprecia sabores fortes e autênticos</td>
+            <td data-label="Preço" class="preco">R$ 30,00</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
-  </section>
+  </div>
+</section>
+
+  <footer style="text-align:center; margin-top:40px; font-size:14px; color:#777;">
+  © 2025 Ateliê Cacau - Feito com amor em Joinville 🍬
+</footer>
+
 </body>
 </html>
